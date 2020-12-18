@@ -1,0 +1,82 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class GrowableObject : MonoBehaviour
+{
+    public static GrowableObject Instance;
+    public GameObject ObstaclePrefab;
+    public Transform TransfromToGrow;
+    private Vector3 initScale;
+    public bool locked;
+    private void OnEnable()
+    {
+        initScale = TransfromToGrow.localScale;
+        PointManager.objectGrowDelegate += Grow;
+    }
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+        DontDestroyOnLoad(this);
+    }
+    private void Update()
+    {
+        if (!TransfromToGrow)
+        {
+            TransfromToGrow = GameObject.Find("Platforms").transform;
+            initScale = TransfromToGrow.localScale;
+        }
+    }
+    private void Grow(int multiplier)
+    {
+        if (!locked)
+        {
+            this.StartCoroutine(GrowCoroutine(multiplier));
+        }
+    }
+
+    private IEnumerator GrowCoroutine(int multiplier)
+    {
+        Debug.Log(TransfromToGrow.GetComponentInChildren<Animation>().gameObject.name);
+        TransfromToGrow.GetComponentInChildren<Animation>().Play("LevelGrow");
+        TransfromToGrow.GetComponentInChildren<Outline>().enabled = true;
+        locked = true;
+        float endScale = initScale.x + (multiplier / 10f);
+        while (TransfromToGrow.localScale.x < endScale)
+        {
+            TransfromToGrow.localScale += new Vector3(multiplier / 10f, multiplier / 10f, multiplier / 10f) * Time.deltaTime;
+            if (TransfromToGrow.localScale.x >= endScale) break;
+            yield return null;
+        }
+        TransfromToGrow.localScale = new Vector3(endScale, endScale, endScale);
+        initScale = TransfromToGrow.localScale;
+        SpawnObstacle();
+        TransfromToGrow.GetComponentInChildren<Outline>().enabled = false;
+        locked = false;
+    }
+    private void SpawnObstacle()
+    {
+        for (int i = 0; i < PointManager.Instance.CollectedPoints / 10; i++)
+        {
+            float randomX = Random.Range(-2.5f * initScale.x, 2.5f * initScale.x);
+            float randomZ = Random.Range(-2.5f * initScale.x, 2.5f * initScale.x);
+            ObstaclePrefab.transform.localScale = new Vector3(PointManager.Instance.playerDeath.CurrentSizeMultipolier, PointManager.Instance.playerDeath.CurrentSizeMultipolier, PointManager.Instance.playerDeath.CurrentSizeMultipolier);
+            Instantiate(ObstaclePrefab, new Vector3(randomX, initScale.y + ObstaclePrefab.transform.localScale.y * 0.9f, randomZ), Quaternion.identity);
+        }
+    }
+    private void OnDisable()
+    {
+        PointManager.playerGrowDelegate -= Grow;
+    }
+    private void OnDestroy()
+    {
+        PointManager.playerGrowDelegate -= Grow;
+    }
+}
