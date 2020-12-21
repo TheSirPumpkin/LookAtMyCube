@@ -5361,6 +5361,7 @@ MonoBehaviour:
   joystick: {fileID: 115409634}
   CurrentSizeMultipolier: 0
   StoneBreaker: 0
+  Invulnerable: 0
 --- !u!114 &1375662232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12933,6 +12934,11 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 848429206250514988, guid: ff17ac79f3e40374eb22c20f1c2f5878,
         type: 3}
+      propertyPath: Bonus.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 848429206250514988, guid: ff17ac79f3e40374eb22c20f1c2f5878,
+        type: 3}
       propertyPath: Platfrom
       value: 
       objectReference: {fileID: 2044745545}
@@ -12946,6 +12952,17 @@ PrefabInstance:
       propertyPath: Bonus
       value: 
       objectReference: {fileID: 4254966793853022666, guid: f78f8d94c58ae744db4b77c72b8cac11,
+        type: 3}
+    - target: {fileID: 848429206250514988, guid: ff17ac79f3e40374eb22c20f1c2f5878,
+        type: 3}
+      propertyPath: MagnetSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 848429206250514988, guid: ff17ac79f3e40374eb22c20f1c2f5878,
+        type: 3}
+      propertyPath: Bonus.Array.data[2]
+      value: 
+      objectReference: {fileID: 3549093588912982305, guid: 74d89c2952a685d4dbe97cc0b8b3d90d,
         type: 3}
     - target: {fileID: 848429206250514990, guid: ff17ac79f3e40374eb22c20f1c2f5878,
         type: 3}
@@ -13434,6 +13451,11 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 848429206250514988, guid: ff17ac79f3e40374eb22c20f1c2f5878,
         type: 3}
+      propertyPath: Bonus.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 848429206250514988, guid: ff17ac79f3e40374eb22c20f1c2f5878,
+        type: 3}
       propertyPath: Platfrom
       value: 
       objectReference: {fileID: 2044745545}
@@ -13447,6 +13469,17 @@ PrefabInstance:
       propertyPath: Bonus
       value: 
       objectReference: {fileID: 4254966793853022666, guid: f78f8d94c58ae744db4b77c72b8cac11,
+        type: 3}
+    - target: {fileID: 848429206250514988, guid: ff17ac79f3e40374eb22c20f1c2f5878,
+        type: 3}
+      propertyPath: MagnetSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 848429206250514988, guid: ff17ac79f3e40374eb22c20f1c2f5878,
+        type: 3}
+      propertyPath: Bonus.Array.data[2]
+      value: 
+      objectReference: {fileID: 3549093588912982305, guid: 74d89c2952a685d4dbe97cc0b8b3d90d,
         type: 3}
     - target: {fileID: 848429206250514990, guid: ff17ac79f3e40374eb22c20f1c2f5878,
         type: 3}
@@ -14786,17 +14819,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: point
       objectReference: {fileID: 0}
-    - target: {fileID: 848429206250514979, guid: ff17ac79f3e40374eb22c20f1c2f5878,
-        type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 13400000, guid: b0310a597e2623a47a43616389985e50,
-        type: 2}
     - target: {fileID: 848429206250514988, guid: ff17ac79f3e40374eb22c20f1c2f5878,
         type: 3}
-      propertyPath: Platfrom
-      value: 
-      objectReference: {fileID: 2044745545}
+      propertyPath: Bonus.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 848429206250514988, guid: ff17ac79f3e40374eb22c20f1c2f5878,
         type: 3}
       propertyPath: GroundLevel
@@ -14804,9 +14831,19 @@ PrefabInstance:
       objectReference: {fileID: 895489928}
     - target: {fileID: 848429206250514988, guid: ff17ac79f3e40374eb22c20f1c2f5878,
         type: 3}
-      propertyPath: Bonus
+      propertyPath: Platfrom
       value: 
-      objectReference: {fileID: 4254966793853022666, guid: f78f8d94c58ae744db4b77c72b8cac11,
+      objectReference: {fileID: 2044745545}
+    - target: {fileID: 848429206250514988, guid: ff17ac79f3e40374eb22c20f1c2f5878,
+        type: 3}
+      propertyPath: MagnetSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 848429206250514988, guid: ff17ac79f3e40374eb22c20f1c2f5878,
+        type: 3}
+      propertyPath: Bonus.Array.data[2]
+      value: 
+      objectReference: {fileID: 3549093588912982305, guid: 74d89c2952a685d4dbe97cc0b8b3d90d,
         type: 3}
     - target: {fileID: 848429206250514990, guid: ff17ac79f3e40374eb22c20f1c2f5878,
         type: 3}
@@ -14862,11 +14899,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 848429206250514991, guid: ff17ac79f3e40374eb22c20f1c2f5878,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff17ac79f3e40374eb22c20f1c2f5878, type: 3}

@@ -6,6 +6,9 @@ using System;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public delegate void OnMagnetEnabled(Transform player);
+    public static OnMagnetEnabled magnetEnabled;
+
     public ScoreCounter scoreCounter;
     public LookAtPlayer LookAtPlayer;
     public ParticleSystem deathParticles;
@@ -19,9 +22,14 @@ public class PlayerMovement : MonoBehaviour
     public GameObject joystick;
     public float CurrentSizeMultipolier;
     public bool StoneBreaker;
+    public bool Invulnerable;
     private Vector3 startScale;
     void Start()
     {
+        PlayerPrefs.SetFloat("MagnetTime", 3f);
+        PlayerPrefs.SetFloat("CrushTime", 3f);
+        PlayerPrefs.SetFloat("ShieldTime", 3f);
+        
         startScale = transform.localScale;
         joystick.SetActive(true);
         //rend = GetComponent<Renderer>();
@@ -88,11 +96,29 @@ public class PlayerMovement : MonoBehaviour
             Destroy(collision.gameObject);
             StartCoroutine("CancelCrash");
         }
+
+        if (collision.gameObject.tag == "Magnet")
+        {
+            magnetEnabled.Invoke(transform);
+            Destroy(collision.gameObject);
+        }
+
+        if (collision.gameObject.tag == "Shield")
+        {
+            StopCoroutine("CancelShield");
+            Destroy(collision.gameObject);
+            StartCoroutine("CancelShield");
+        }
     }
     private IEnumerator CancelCrash()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(PlayerPrefs.GetFloat("CrushTime"));
         StoneBreaker = false;
+    }
+    private IEnumerator CancelShield()
+    {
+        yield return new WaitForSeconds(PlayerPrefs.GetFloat("ShieldTime"));
+        Invulnerable = false;
     }
     void DropDown()
     {

@@ -89,7 +89,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 848429206250514978}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b0310a597e2623a47a43616389985e50, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -110,7 +110,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!114 &848429206250514988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,5 +123,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90a4c71bd85be2540bb293fe703230bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Bonus:
+  - {fileID: 3857290057406487293, guid: 66d959615210c9c4f9f1087ff3d6645c, type: 3}
+  - {fileID: 4254966793853022666, guid: f78f8d94c58ae744db4b77c72b8cac11, type: 3}
+  GroundLevel: {fileID: 0}
+  Platfrom: {fileID: 0}
   pointParticles: {fileID: 5904493239911002000, guid: a5b745bd35033e547a435327d14ebc18,
     type: 3}
+  MagnetSpeed: 15
