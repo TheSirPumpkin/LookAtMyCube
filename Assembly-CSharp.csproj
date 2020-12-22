@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{5611A45E-9BB5-2A19-B125-1FFA9620D5AC}</ProjectGuid>
+    <ProjectGuid>{A2083B20-033A-5C4D-12A0-42C4F17E9EAE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -140,6 +140,7 @@
     <Compile Include="Assets\rofloproj\Scripts\Bomb.cs" />
     <Compile Include="Assets\rofloproj\Scripts\BombManager.cs" />
     <Compile Include="Assets\rofloproj\Scripts\ChangeMaterial.cs" />
+    <Compile Include="Assets\rofloproj\Scripts\ColorChangingObject.cs" />
     <Compile Include="Assets\rofloproj\Scripts\GrowableObject.cs" />
     <Compile Include="Assets\rofloproj\Scripts\GrowablePlayer.cs" />
     <Compile Include="Assets\rofloproj\Scripts\JoystickMove.cs" />
@@ -254,31 +255,31 @@
     <None Include="Assets\VertExmotion\Shaders\VM_builtin_shaders\Reflect-ParallaxSpec.shader" />
     <None Include="Assets\VertExmotion\Shaders\VM_builtin_shaders\Illumin-Glossy.shader" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/Unity/Reborn v.0.2/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/Unity/CubeGame/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/Unity/Reborn v.0.2/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>D:/Unity/CubeGame/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/Unity/Reborn v.0.2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/Unity/CubeGame/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/Unity/Reborn v.0.2/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/Unity/CubeGame/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/Unity/Reborn v.0.2/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/Unity/CubeGame/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/Unity/Reborn v.0.2/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/Unity/CubeGame/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/Unity/Reborn v.0.2/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>D:/Unity/CubeGame/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Unity/Reborn v.0.2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/Unity/CubeGame/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/Unity/Reborn v.0.2/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/Unity/CubeGame/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -814,7 +815,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Obi.csproj">
-      <Project>{C6DF5DFD-E4A9-3029-E9D6-E460F0C5A0D8}</Project>
+      <Project>{C9AE1D19-09D0-AD09-B09B-660DF27091FB}</Project>
       <Name>Obi</Name>
     </ProjectReference>
   </ItemGroup>

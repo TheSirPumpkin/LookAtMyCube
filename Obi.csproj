@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{C6DF5DFD-E4A9-3029-E9D6-E460F0C5A0D8}</ProjectGuid>
+    <ProjectGuid>{C9AE1D19-09D0-AD09-B09B-660DF27091FB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Obi</AssemblyName>
@@ -158,10 +158,10 @@
     <Compile Include="Assets\Obi\Scripts\Softbody\Rendering\ObiSoftbodySkinner.cs" />
     <None Include="Assets\Obi\Scripts\Obi.asmdef" />
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/Unity/Reborn v.0.2/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/Unity/CubeGame/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/Unity/Reborn v.0.2/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/Unity/CubeGame/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

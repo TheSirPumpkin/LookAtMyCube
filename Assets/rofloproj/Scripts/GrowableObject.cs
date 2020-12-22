@@ -5,6 +5,7 @@ using UnityEngine;
 public class GrowableObject : MonoBehaviour
 {
     public static GrowableObject Instance;
+    public Color CurrentColor;
     public GameObject ObstaclePrefab;
     public Transform TransfromToGrow;
     private Vector3 initScale;
@@ -46,7 +47,7 @@ public class GrowableObject : MonoBehaviour
     {
         Debug.Log(TransfromToGrow.GetComponentInChildren<Animation>().gameObject.name);
         TransfromToGrow.GetComponentInChildren<Animation>().Play("LevelGrow");
-        TransfromToGrow.GetComponentInChildren<Outline>().enabled = true;
+        //TransfromToGrow.GetComponentInChildren<Outline>().enabled = true;
         locked = true;
         float endScale = initScale.x + (multiplier / 10f);
         while (TransfromToGrow.localScale.x < endScale)
@@ -58,7 +59,7 @@ public class GrowableObject : MonoBehaviour
         TransfromToGrow.localScale = new Vector3(endScale, endScale, endScale);
         initScale = TransfromToGrow.localScale;
         SpawnObstacle();
-        TransfromToGrow.GetComponentInChildren<Outline>().enabled = false;
+        //TransfromToGrow.GetComponentInChildren<Outline>().enabled = false;
         locked = false;
     }
     private void SpawnObstacle()
@@ -68,7 +69,17 @@ public class GrowableObject : MonoBehaviour
             float randomX = Random.Range(-2.5f * initScale.x, 2.5f * initScale.x);
             float randomZ = Random.Range(-2.5f * initScale.x, 2.5f * initScale.x);
             ObstaclePrefab.transform.localScale = new Vector3(PointManager.Instance.playerDeath.CurrentSizeMultipolier, PointManager.Instance.playerDeath.CurrentSizeMultipolier, PointManager.Instance.playerDeath.CurrentSizeMultipolier);
-            Instantiate(ObstaclePrefab, new Vector3(randomX, initScale.y + ObstaclePrefab.transform.localScale.y * 0.9f, randomZ), Quaternion.identity);
+            ObstacleRoot obst= Instantiate(ObstaclePrefab, new Vector3(randomX, initScale.y + ObstaclePrefab.transform.localScale.y * 0.9f, randomZ), Quaternion.identity).GetComponent<ObstacleRoot>();
+            foreach (var obstacle in obst.GetComponent<ObstacleRoot>().Obstacles)
+            {
+                if (obstacle.GetComponent<MeshRenderer>())
+                {
+                    foreach (var mat in obstacle.GetComponent<MeshRenderer>().materials)
+                    {
+                        mat.color = CurrentColor;
+                    }
+                }
+            }
         }
     }
     private void OnDisable()

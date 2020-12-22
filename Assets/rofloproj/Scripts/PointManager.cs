@@ -10,6 +10,10 @@ public class PointManager : MonoBehaviour
     public static OnObjectGrowDelegate objectGrowDelegate;
     public delegate void OnPlayerDwonscaleDelegate(float multiplier);
     public static OnPlayerDwonscaleDelegate playerDownscaleDelegate;
+    public delegate void OnChangeColor();
+    public static OnChangeColor changeColor;
+    [SerializeField]
+    public Color[] LevelColors;
 
     public static PointManager Instance { get; private set; }
     public ScoreCounter scoreCounter;
@@ -24,6 +28,7 @@ public class PointManager : MonoBehaviour
     public int CollectedPoints;
     public BombManager BombManager;
     private int collectToRise;
+    private int levelpassed;
 
     public void Awake()
     {
@@ -69,12 +74,21 @@ public class PointManager : MonoBehaviour
         if (CollectedPoints > collectToRise)
         {
             collectToRise = CollectedPoints;
-           // if (collectToRise % 5 == 0)
-           // {
-                if (GrowableObject.Instance.TransfromToGrow.localScale.x / playerDeath.transform.localScale.x <= 2)
+            // if (collectToRise % 5 == 0)
+            // {
+            if (GrowableObject.Instance.TransfromToGrow.localScale.x / playerDeath.transform.localScale.x <= 1.5f)
+            {
+                objectGrowDelegate?.Invoke((int)(10 * playerDeath.transform.localScale.x));
+                levelpassed++;
+                if (levelpassed == 5)
                 {
-                    objectGrowDelegate?.Invoke(5);
+                    Random.seed = System.DateTime.Now.Millisecond;
+                    GrowableObject.Instance.CurrentColor = LevelColors[Random.Range(0, LevelColors.Length)];
+                    changeColor.Invoke();
+                    PlayerPrefs.SetInt("CleaeredLevels", PlayerPrefs.GetInt("CleaeredLevels") + 1);
+                    levelpassed = 0;
                 }
+            }
             // }
 
             if (collectToRise % 30 == 0)

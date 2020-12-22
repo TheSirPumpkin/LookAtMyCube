@@ -11,10 +11,15 @@ public class LookAtPlayer : MonoBehaviour
     public float AdjustZ;
     public float SmoothTime = 0.3f;
     private Vector3 velocity = Vector3.zero;
+    private void Start()
+    {
+        PlayerPrefs.SetInt("CleaeredLevels", 1);
+    }
     private void Update()
     {
+        Debug.Log(PlayerPrefs.GetInt("CleaeredLevels"));
         RenderSettings.fogStartDistance=transform.position.y;
-        RenderSettings.fogEndDistance = transform.position.y + 200f;
+        RenderSettings.fogEndDistance = ((transform.position.y + GrowableObject.Instance.TransfromToGrow.localScale.y) * PlayerPrefs.GetInt("CleaeredLevels"))+150f;
     }
     private void FixedUpdate()
     {

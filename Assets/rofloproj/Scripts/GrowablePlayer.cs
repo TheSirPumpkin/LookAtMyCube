@@ -29,7 +29,7 @@ public class GrowablePlayer : MonoBehaviour
     private IEnumerator GrowCoroutine(int multiplier)
     {
        
-        float endScale = initScale.x + (multiplier / 10f);
+        float endScale = initScale.x + (multiplier / 10f)* transform.localScale.x;
         while (transform.localScale.x < endScale)
         {
             transform.localScale += new Vector3(multiplier, multiplier , multiplier) * Time.deltaTime;
