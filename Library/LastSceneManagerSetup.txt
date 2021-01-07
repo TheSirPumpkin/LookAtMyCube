@@ -3,15 +3,3 @@ sceneSetups:
   isLoaded: 1
   isActive: 1
   isSubScene: 0
-- path: Assets/VertExmotion/Demos/JellyCube/JellyCube.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Polyquest Worlds Full Pack Vol.1/scenes/Lighting_day_setup_B_rocks.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Polyquest Worlds Full Pack Vol.1/scenes/Lighting_day_setup_B_cliffs.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
