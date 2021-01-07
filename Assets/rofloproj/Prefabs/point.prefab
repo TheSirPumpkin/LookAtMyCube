@@ -126,8 +126,9 @@ MonoBehaviour:
   Bonus:
   - {fileID: 3857290057406487293, guid: 66d959615210c9c4f9f1087ff3d6645c, type: 3}
   - {fileID: 4254966793853022666, guid: f78f8d94c58ae744db4b77c72b8cac11, type: 3}
+  - {fileID: 3549093588912982305, guid: 74d89c2952a685d4dbe97cc0b8b3d90d, type: 3}
   GroundLevel: {fileID: 0}
   Platfrom: {fileID: 0}
   pointParticles: {fileID: 5904493239911002000, guid: a5b745bd35033e547a435327d14ebc18,
     type: 3}
-  MagnetSpeed: 15
+  MagnetSpeed: 20
