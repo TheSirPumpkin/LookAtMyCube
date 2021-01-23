@@ -24,7 +24,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_2019_3_5;UNITY_2019_3;UNITY_2019;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_RUNTIME_PERMISSIONS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_VIDEO;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;UNITY_ASTC_ONLY_DECOMPRESS;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;CROSS_PLATFORM_INPUT;MOBILE_INPUT;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_2019_3_5;UNITY_2019_3;UNITY_2019;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_RUNTIME_PERMISSIONS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_VIDEO;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;UNITY_ASTC_ONLY_DECOMPRESS;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_4_6;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;CROSS_PLATFORM_INPUT;MOBILE_INPUT;MOREMOUNTAINS_NICEVIBRATIONS;UD_LEGACY;UD_MOBILE;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -62,6 +62,64 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\GPGSIds.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Achievement.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\CommonStatusCodes.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\CommonTypes.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\DummyClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Events\Event.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Events\IEvent.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Events\IEventsClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\IPlayGamesClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\LeaderboardScoreData.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Nearby\AdvertisingResult.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Nearby\ConnectionRequest.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Nearby\ConnectionResponse.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Nearby\DummyNearbyConnectionClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Nearby\EndpointDetails.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Nearby\INearbyConnectionClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Nearby\NearbyConnectionConfiguration.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\PlayGamesClientConfiguration.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Player.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\PlayerProfile.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\PlayerStats.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\SavedGame\ISavedGameClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\SavedGame\ISavedGameMetadata.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\SavedGame\SavedGameMetadataUpdate.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\ScorePageToken.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\SignInHelper.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\SignInInteractivity.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\SignInStatus.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Video\CaptureOverlayStateListener.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Video\IVideoClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Video\VideoCapabilities.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Video\VideoCaptureState.cs" />
+    <Compile Include="Assets\GooglePlayGames\GameInfo.cs" />
+    <Compile Include="Assets\GooglePlayGames\ISocialPlatform\PlayGamesAchievement.cs" />
+    <Compile Include="Assets\GooglePlayGames\ISocialPlatform\PlayGamesLeaderboard.cs" />
+    <Compile Include="Assets\GooglePlayGames\ISocialPlatform\PlayGamesLocalUser.cs" />
+    <Compile Include="Assets\GooglePlayGames\ISocialPlatform\PlayGamesPlatform.cs" />
+    <Compile Include="Assets\GooglePlayGames\ISocialPlatform\PlayGamesScore.cs" />
+    <Compile Include="Assets\GooglePlayGames\ISocialPlatform\PlayGamesUserProfile.cs" />
+    <Compile Include="Assets\GooglePlayGames\OurUtils\Logger.cs" />
+    <Compile Include="Assets\GooglePlayGames\OurUtils\Misc.cs" />
+    <Compile Include="Assets\GooglePlayGames\OurUtils\NearbyHelperObject.cs" />
+    <Compile Include="Assets\GooglePlayGames\OurUtils\PlatformUtils.cs" />
+    <Compile Include="Assets\GooglePlayGames\OurUtils\PlayGamesHelperObject.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Android\AndroidClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Android\AndroidEventsClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Android\AndroidHelperFragment.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Android\AndroidJavaConverter.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Android\AndroidNearbyConnectionClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Android\AndroidSavedGameClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Android\AndroidSnapshotMetadata.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Android\AndroidTaskUtils.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Android\AndroidTokenClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Android\AndroidVideoClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\NearbyConnectionClientFactory.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\PlayGamesClientFactory.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\TokenClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\PluginVersion.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
@@ -141,13 +199,16 @@
     <Compile Include="Assets\rofloproj\Scripts\BombManager.cs" />
     <Compile Include="Assets\rofloproj\Scripts\ChangeMaterial.cs" />
     <Compile Include="Assets\rofloproj\Scripts\ColorChangingObject.cs" />
+    <Compile Include="Assets\rofloproj\Scripts\Ground.cs" />
     <Compile Include="Assets\rofloproj\Scripts\GrowableObject.cs" />
     <Compile Include="Assets\rofloproj\Scripts\GrowablePlayer.cs" />
     <Compile Include="Assets\rofloproj\Scripts\JoystickMove.cs" />
     <Compile Include="Assets\rofloproj\Scripts\LookAtPlayer.cs" />
+    <Compile Include="Assets\rofloproj\Scripts\ObstacleCleaner.cs" />
     <Compile Include="Assets\rofloproj\Scripts\ObstaclePart.cs" />
     <Compile Include="Assets\rofloproj\Scripts\ObstacleRoot.cs" />
     <Compile Include="Assets\rofloproj\Scripts\PauseMenu.cs" />
+    <Compile Include="Assets\rofloproj\Scripts\PlayGamesManager.cs" />
     <Compile Include="Assets\rofloproj\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\rofloproj\Scripts\PointManager.cs" />
     <Compile Include="Assets\rofloproj\Scripts\Points.cs" />
@@ -161,6 +222,7 @@
     <None Include="Assets\Obi\Resources\ObiMaterials\ParticleShader.shader" />
     <None Include="Assets\VertExmotion\Shaders\VM_builtin_shaders\Reflect-BumpNolight.shader" />
     <None Include="Assets\VertExmotion\Shaders\VertExmotionUnityStandardShadow.cginc" />
+    <None Include="Assets\GooglePlayGames\Plugins\Android\GooglePlayGamesManifest.plugin\AndroidManifest.xml" />
     <None Include="Assets\VertExmotion\Shaders\VertExmotionUnityStandardCoreForwardSimple.cginc" />
     <None Include="Assets\Polyquest Worlds Full Pack Vol.1\scenes\Rocks_Scenes\Troubleshooting_textured_scenes_TX.txt" />
     <None Include="Assets\VertExmotion\Shaders\VM_builtin_shaders\Normal-Bumped.shader" />
@@ -172,13 +234,16 @@
     <None Include="Assets\VertExmotion\Shaders\VM_builtin_shaders\Alpha-Glossy.shader" />
     <None Include="Assets\VertExmotion\Shaders\VertExmotionSprites-Diffuse.shader" />
     <None Include="Assets\VertExmotion\Shaders\VM_builtin_shaders\Normal-DiffuseDetail.shader" />
+    <None Include="Assets\NiceVibrations\OlderVersions\v2.0.1\NiceVibrations-v-2-0-1-readme.txt" />
     <None Include="Assets\Polyquest Worlds Full Pack Vol.1\scenes\Stones_Scenes\Stones_Textured_lightmapped_scenes\Troubleshooting_textured_scenes_TX.txt" />
     <None Include="Assets\VertExmotion\Shaders\VM_builtin_shaders\Alpha-Bumped.shader" />
     <None Include="Assets\VertExmotion\Shaders\VM_builtin_shaders\Mobile\Mobile-Diffuse.shader" />
+    <None Include="Assets\BOXOPHOBIC\Atmospheric Height Fog\Core\Shaders\UI Default (Height Fog Support).shader" />
     <None Include="Assets\VertExmotion\Shaders\VM_builtin_shaders\Illumin-Bumped.shader" />
     <None Include="Assets\VertExmotion\Shaders\VM_builtin_shaders\AlphaTest-SoftEdgeUnlit.shader" />
     <None Include="Assets\VertExmotion\Shaders\VertExmotionUnityStandardCoreForward.cginc" />
     <None Include="Assets\VertExmotion\Shaders\VM_builtin_shaders\Rim Lit Bumped Specular VertExmotion.shader" />
+    <None Include="Assets\BOXOPHOBIC\Atmospheric Height Fog\Core\Resources\Height Fog Preset.shader" />
     <None Include="Assets\VertExmotion\Shaders\VM_builtin_shaders\Normal-DiffuseFast.shader" />
     <None Include="Assets\VertExmotion\Shaders\VertExmotion_editor.shader" />
     <None Include="Assets\QuickOutline\Resources\Shaders\OutlineMask.shader" />
@@ -192,6 +257,7 @@
     <None Include="Assets\VertExmotion\Shaders\VM_builtin_shaders\Mobile\Mobile-BumpSpec.shader" />
     <None Include="Assets\VertExmotion\Shaders\VM_builtin_shaders\Normal-ParallaxSpec.shader" />
     <None Include="Assets\VertExmotion\Shaders\VM_builtin_shaders\Alpha-Diffuse.shader" />
+    <None Include="Assets\NiceVibrations\ThirdParty\Newtonsoft\NewtonsoftJsonLicense.txt" />
     <None Include="Assets\VertExmotion\Shaders\VM_builtin_shaders\Alpha-Parallax.shader" />
     <None Include="Assets\VertExmotion\Shaders\VM_builtin_shaders\Lightmap-BumpSpec.shader" />
     <None Include="Assets\VertExmotion\Shaders\VM_builtin_shaders\Normal-Bumped_2Sided.shader" />
@@ -212,17 +278,24 @@
     <None Include="Assets\VertExmotion\Shaders\VM_builtin_shaders\Illumin-Parallax.shader" />
     <None Include="Assets\VertExmotion\Shaders\VM_builtin_shaders\Illumin-ParallaxSpec.shader" />
     <None Include="Assets\VertExmotion\Shaders\VertExmotionStandardMeta.cginc" />
+    <None Include="Assets\NiceVibrations\readme.txt" />
+    <None Include="Assets\NiceVibrations\Common\Plugins\Android\AndroidManifest.xml" />
     <None Include="Assets\VertExmotion\Shaders\VM_builtin_shaders\Reflect-BumpSpec.shader" />
+    <None Include="Assets\NiceVibrations\OlderVersions\v1.7\NiceVibrations-v-1-7-readme.txt" />
     <None Include="Assets\Polyquest Worlds Full Pack Vol.1\shaders\PolyboxStandard.shader" />
     <None Include="Assets\Polyquest Worlds Full Pack Vol.1\shaders\PolyboxCoreForward.cginc" />
     <None Include="Assets\VertExmotion\Shaders\VM_builtin_shaders\Normal-Glossy.shader" />
     <None Include="Assets\VertExmotion\Shaders\VM_builtin_shaders\Decal.shader" />
+    <None Include="Assets\BOXOPHOBIC\Atmospheric Height Fog\Core\Resources\Height Fog Per Object.shader" />
     <None Include="Assets\QuickOutline\Readme.txt" />
+    <None Include="Assets\BOXOPHOBIC\Atmospheric Height Fog\Demo\Shaders\My Transparent Shader.shader" />
     <None Include="Assets\VertExmotion\Shaders\VertExmotionStandardShadow.cginc" />
     <None Include="Assets\VertExmotion\Demos\ShaderForgeSamples\SHADERFORGE TUTO.txt" />
     <None Include="Assets\VertExmotion\Demos\ShaderForgeSamples\VertExmotion_shaderForge_1.35.shader" />
+    <None Include="Assets\NiceVibrations\license.txt" />
     <None Include="Assets\VertExmotion\Shaders\VM_builtin_shaders\Font.shader" />
     <None Include="Assets\VertExmotion\Shaders\VM_builtin_shaders\Lightmap-Glossy.shader" />
+    <None Include="Assets\BOXOPHOBIC\Atmospheric Height Fog\Core\Resources\Height Fog Global.shader" />
     <None Include="Assets\VertExmotion\Shaders\VM_builtin_shaders\Normal-BumpSpec.shader" />
     <None Include="Assets\VertExmotion\Shaders\VM_builtin_shaders\Mobile\Mobile-Bumped.shader" />
     <None Include="Assets\VertExmotion\Shaders\VM_builtin_shaders\Reflect-Diffuse.shader" />
@@ -238,6 +311,7 @@
     <None Include="Assets\VertExmotion\Shaders\VM_builtin_shaders\AlphaTest-Diffuse.shader" />
     <None Include="Assets\VertExmotion\Shaders\VM_builtin_shaders\Flare.shader" />
     <None Include="Assets\VertExmotion\Demos\Jellyfish\Jellyfish.shader" />
+    <None Include="Assets\BOXOPHOBIC\Atmospheric Height Fog\Core\Includes\AtmosphericHeightFog.cginc" />
     <None Include="Assets\VertExmotion\Shaders\VM_builtin_shaders\Reflect-Parallax.shader" />
     <None Include="Assets\VertExmotion\Shaders\VM_builtin_shaders\Unlit\Unlit-Normal.shader" />
     <None Include="Assets\Obi\Resources\ObiMaterials\LitParticles.shader" />
@@ -451,6 +525,15 @@
     </Reference>
     <Reference Include="UnityEngine.XRModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>D:/Unity/CubeGame/Assets/NiceVibrations/ThirdParty/Newtonsoft/Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Compat">
+      <HintPath>D:/Unity/CubeGame/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Tasks">
+      <HintPath>D:/Unity/CubeGame/Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.5f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -817,6 +900,38 @@
     <ProjectReference Include="Obi.csproj">
       <Project>{C9AE1D19-09D0-AD09-B09B-660DF27091FB}</Project>
       <Name>Obi</Name>
+    </ProjectReference>
+    <ProjectReference Include="Boxophobic.Utils.Scripts.csproj">
+      <Project>{EE9FA72A-8E00-1A95-BEBE-01146C10B680}</Project>
+      <Name>Boxophobic.Utils.Scripts</Name>
+    </ProjectReference>
+    <ProjectReference Include="MoreMountains.NiceVibrations.Haptics.csproj">
+      <Project>{4FC8E5D7-8102-2BA3-B1DB-4D3072179118}</Project>
+      <Name>MoreMountains.NiceVibrations.Haptics</Name>
+    </ProjectReference>
+    <ProjectReference Include="MoreMountains.NiceVibrations.csproj">
+      <Project>{BD7709CE-5C67-1F27-1E92-CEC5ABF621F6}</Project>
+      <Name>MoreMountains.NiceVibrations</Name>
+    </ProjectReference>
+    <ProjectReference Include="Boxophobic.AtmosphericHeightFog.Editor.csproj">
+      <Project>{D66B3AD8-8D2C-98C1-BECF-956F6D7D80A8}</Project>
+      <Name>Boxophobic.AtmosphericHeightFog.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Boxophobic.Utils.Editor.csproj">
+      <Project>{4CE2C664-05DF-0E5A-344D-5666F77BFE58}</Project>
+      <Name>Boxophobic.Utils.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="MoreMountains.NiceVibrations.Editor.csproj">
+      <Project>{D784717F-7DA5-434B-0BD8-9D95C01BB008}</Project>
+      <Name>MoreMountains.NiceVibrations.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="MoreMountains.NiceVibrations.Demos.csproj">
+      <Project>{09357596-BE9D-EDD8-E975-933C355FF08C}</Project>
+      <Name>MoreMountains.NiceVibrations.Demos</Name>
+    </ProjectReference>
+    <ProjectReference Include="Boxophobic.AtmosphericHeightFog.Runtime.csproj">
+      <Project>{0733FF42-33C6-0F35-3D90-A95BDD280014}</Project>
+      <Name>Boxophobic.AtmosphericHeightFog.Runtime</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

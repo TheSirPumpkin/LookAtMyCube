@@ -39,20 +39,30 @@ public class GrowableObject : MonoBehaviour
     {
         if (!locked)
         {
+          
             this.StartCoroutine(GrowCoroutine(multiplier));
         }
     }
 
     private IEnumerator GrowCoroutine(int multiplier)
     {
+        ObstaclePart[] obstacles = GameObject.FindObjectsOfType<ObstaclePart>();
         Debug.Log(TransfromToGrow.GetComponentInChildren<Animation>().gameObject.name);
-        TransfromToGrow.GetComponentInChildren<Animation>().Play("LevelGrow");
+        TransfromToGrow.GetComponentInChildren<Animation>().Play("LevelGrow2");
         //TransfromToGrow.GetComponentInChildren<Outline>().enabled = true;
         locked = true;
         float endScale = initScale.x + (multiplier / 10f);
         while (TransfromToGrow.localScale.x < endScale)
         {
             TransfromToGrow.localScale += new Vector3(multiplier / 10f, multiplier / 10f, multiplier / 10f) * Time.deltaTime;
+            if (obstacles.Length != 0)
+            {
+                foreach (var obs in obstacles)
+                {
+                    obs.transform.position += new Vector3(0, 0.01f, 0);
+                    obs.transform.localScale += new Vector3(0.003f, 0.003f, 0.003f);
+                }
+            }
             if (TransfromToGrow.localScale.x >= endScale) break;
             yield return null;
         }
@@ -64,7 +74,7 @@ public class GrowableObject : MonoBehaviour
     }
     private void SpawnObstacle()
     {
-        for (int i = 0; i < PointManager.Instance.CollectedPoints / 10; i++)
+        for (int i = 0; i < PointManager.Instance.CollectedPoints / 2; i++)
         {
             float randomX = Random.Range(-2.5f * initScale.x, 2.5f * initScale.x);
             float randomZ = Random.Range(-2.5f * initScale.x, 2.5f * initScale.x);
@@ -81,6 +91,8 @@ public class GrowableObject : MonoBehaviour
                 }
             }
         }
+
+     
     }
     private void OnDisable()
     {

@@ -11,13 +11,20 @@ public class PauseMenu : MonoBehaviour
     public GameObject pausePanel;
     public GameObject joystick;
 
-    void Start()
+    void Awake()
     {
         playerDeath.alive = true;
         pausePanel.SetActive(false);
-        Time.timeScale = 1;
+       
     }
-
+    private void Start()
+    {
+        Invoke("Pause",0.01f);
+    }
+    public void ShowHighScore()
+    {
+        Social.ShowLeaderboardUI();
+    }
     public void Resume()
     {
         joystick.SetActive(true);

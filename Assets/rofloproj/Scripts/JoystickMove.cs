@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using MoreMountains.NiceVibrations;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -26,7 +27,7 @@ public class JoystickMove : MonoBehaviour
         horizontalMove = joystick.Horizontal * moveForce;
         verticalMove = joystick.Vertical * moveForce;
          rb.velocity = new Vector3 (horizontalMove, rb.velocity.y, verticalMove);
-      
+        
 
         //if (verticalMove > 0f)
         //{

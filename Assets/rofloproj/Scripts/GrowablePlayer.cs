@@ -6,6 +6,7 @@ public class GrowablePlayer : MonoBehaviour
 {
     private Vector3 initScale;
     private bool locked;
+    private PlayerMovement player;
     private void OnEnable()
     {
         initScale = transform.localScale;
@@ -14,6 +15,14 @@ public class GrowablePlayer : MonoBehaviour
     }
     private void Grow(int multiplier)
     {
+        if (player == null)
+        {
+            player = GameObject.FindObjectOfType<PlayerMovement>();
+        }
+        if (!player.alive)
+        {
+            return;
+        }
         StopAllCoroutines();
        // GrowableObject.Instance.locked = true;
       //  if (!locked) locked = true;
@@ -28,16 +37,23 @@ public class GrowablePlayer : MonoBehaviour
 
     private IEnumerator GrowCoroutine(int multiplier)
     {
-       
+        
         float endScale = initScale.x + (multiplier / 10f)* transform.localScale.x;
         while (transform.localScale.x < endScale)
         {
             transform.localScale += new Vector3(multiplier, multiplier , multiplier) * Time.deltaTime;
+
+           
+
             yield return null;
         }
         transform.localScale= new Vector3(endScale,endScale ,endScale);
         initScale = transform.localScale;
-       // GrowableObject.Instance.locked = false;
+        Physics.gravity = new Vector3(0, transform.localScale.y * -9.81f, 0);
+        RenderSettings.fogStartDistance = transform.position.y;
+        RenderSettings.fogEndDistance = RenderSettings.fogStartDistance * 25f;
+        RenderSettings.fogColor= GrowableObject.Instance.CurrentColor;
+        // GrowableObject.Instance.locked = false;
         //   locked = false;
     }
 
@@ -52,7 +68,11 @@ public class GrowablePlayer : MonoBehaviour
             yield return null;
         }
         initScale = transform.localScale;
-       // locked = false;
+        Physics.gravity = new Vector3(0, transform.localScale.y * -9.81f, 0);
+        RenderSettings.fogStartDistance = transform.position.y;
+        RenderSettings.fogEndDistance = RenderSettings.fogStartDistance * 25f;
+        RenderSettings.fogColor = GrowableObject.Instance.CurrentColor;
+        // locked = false;
     }
 
     private void OnDisable()

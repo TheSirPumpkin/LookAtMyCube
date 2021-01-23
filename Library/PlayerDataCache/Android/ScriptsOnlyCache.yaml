@@ -5,7 +5,9 @@ ScriptsOnlyBuild:
     - BestScore
     - Bomb
     - BombManager
+    - ColorChangingObject
     - DynamicJoystick
+    - Ground
     - GrowableObject
     - GrowablePlayer
     - JoystickMove
@@ -13,23 +15,25 @@ ScriptsOnlyBuild:
     - Kalagaan.VertExmotionCollider
     - Kalagaan.VertExmotionSensor
     - LookAtPlayer
+    - ObstacleCleaner
     - ObstaclePart
     - ObstacleRoot
     - Outline
     - PauseMenu
+    - PlayGamesManager
     - PlayerMovement
     - PointManager
     - Points
     - ScoreCounter
+    MoreMountains.NiceVibrations.dll:
+    - MoreMountains.NiceVibrations.MMNVPath
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -75,7 +79,9 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
-    - Class: 89
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
@@ -92,65 +98,75 @@ ScriptsOnlyBuild:
     - Class: 111
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 760}
+      Script: {instanceID: 930}
     - Class: 114
-      Script: {instanceID: 11352}
+      Script: {instanceID: 11530}
     - Class: 114
-      Script: {instanceID: 11370}
+      Script: {instanceID: 11550}
     - Class: 114
-      Script: {instanceID: 11562}
+      Script: {instanceID: 11672}
     - Class: 114
-      Script: {instanceID: 11564}
+      Script: {instanceID: 11780}
     - Class: 114
-      Script: {instanceID: 11614}
+      Script: {instanceID: 11782}
     - Class: 114
-      Script: {instanceID: 11776}
+      Script: {instanceID: 11842}
     - Class: 114
-      Script: {instanceID: 11974}
+      Script: {instanceID: 11876}
     - Class: 114
-      Script: {instanceID: 11998}
+      Script: {instanceID: 12044}
     - Class: 114
-      Script: {instanceID: 12028}
+      Script: {instanceID: 12070}
     - Class: 114
-      Script: {instanceID: 12092}
+      Script: {instanceID: 12268}
     - Class: 114
-      Script: {instanceID: 12154}
+      Script: {instanceID: 12294}
     - Class: 114
-      Script: {instanceID: 12326}
+      Script: {instanceID: 12336}
     - Class: 114
-      Script: {instanceID: 12532}
+      Script: {instanceID: 12420}
     - Class: 114
-      Script: {instanceID: 12612}
+      Script: {instanceID: 12500}
     - Class: 114
-      Script: {instanceID: 12706}
+      Script: {instanceID: 12730}
     - Class: 114
-      Script: {instanceID: 12716}
+      Script: {instanceID: 12816}
     - Class: 114
-      Script: {instanceID: 12966}
+      Script: {instanceID: 12982}
     - Class: 114
-      Script: {instanceID: 13054}
+      Script: {instanceID: 13070}
     - Class: 114
-      Script: {instanceID: 13152}
+      Script: {instanceID: 13178}
     - Class: 114
-      Script: {instanceID: 13206}
+      Script: {instanceID: 13188}
     - Class: 114
-      Script: {instanceID: 13244}
+      Script: {instanceID: 13488}
     - Class: 114
-      Script: {instanceID: 13250}
+      Script: {instanceID: 13582}
     - Class: 114
-      Script: {instanceID: 13618}
+      Script: {instanceID: 13710}
     - Class: 114
-      Script: {instanceID: 13674}
+      Script: {instanceID: 13776}
     - Class: 114
-      Script: {instanceID: 13680}
+      Script: {instanceID: 13822}
     - Class: 114
-      Script: {instanceID: 13704}
+      Script: {instanceID: 13828}
     - Class: 114
-      Script: {instanceID: 13706}
+      Script: {instanceID: 14244}
     - Class: 114
-      Script: {instanceID: 13768}
+      Script: {instanceID: 14308}
     - Class: 114
-      Script: {instanceID: 32390}
+      Script: {instanceID: 14314}
+    - Class: 114
+      Script: {instanceID: 14340}
+    - Class: 114
+      Script: {instanceID: 14342}
+    - Class: 114
+      Script: {instanceID: 14414}
+    - Class: 114
+      Script: {instanceID: 75074}
+    - Class: 114
+      Script: {instanceID: 88478}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -194,7 +210,7 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
-      Hash: 49353324554bc9245b390ac05dd75526
+      Hash: f9b3d3b75817fd6e636d86d54e2f5c77
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMovement
@@ -222,6 +238,18 @@ ScriptsOnlyBuild:
     assemblyName: Obi.dll
     namespaceName: Obi
     className: ObiRigidbody
+  - hash:
+      serializedVersion: 2
+      Hash: a10992f7d1193e395b3020d79655ea1a
+    assemblyName: MoreMountains.NiceVibrations.Demos.dll
+    namespaceName: MoreMountains.NiceVibrations
+    className: MMSpriteReplace
+  - hash:
+      serializedVersion: 2
+      Hash: 3bff48d14bb090ea08eb6d789d265219
+    assemblyName: MoreMountains.NiceVibrations.dll
+    namespaceName: MoreMountains.NiceVibrations
+    className: MMNVPath
   - hash:
       serializedVersion: 2
       Hash: d0b970920660ecfb8cf3542cb687a75d
@@ -252,6 +280,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: GroupTrack
+  - hash:
+      serializedVersion: 2
+      Hash: d2107c735c1a8740497788bbbfa9680a
+    assemblyName: MoreMountains.NiceVibrations.Demos.dll
+    namespaceName: MoreMountains.NiceVibrations
+    className: MMTouchButton
   - hash:
       serializedVersion: 2
       Hash: a5781dc71a671b1ad2b38de19f24b71f
@@ -302,6 +336,12 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
+      Hash: d8439c451a97403bfec66999e93e2268
+    assemblyName: MoreMountains.NiceVibrations.Demos.dll
+    namespaceName: MoreMountains.NiceVibrations
+    className: ContinuousHapticsDemoManager
+  - hash:
+      serializedVersion: 2
       Hash: 8e0313c6f5e2ce35991fec2d64f8eaab
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -318,6 +358,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Kalagaan
     className: VertExmotionColliderBase
+  - hash:
+      serializedVersion: 2
+      Hash: a4928063ccd8106c6155fe8d7545fc88
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ObstaclePart
   - hash:
       serializedVersion: 2
       Hash: 234235b9fb07320d11497e08a726cc56
@@ -344,6 +390,12 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 49373f498f8b556728dad21083e07b73
+    assemblyName: MoreMountains.NiceVibrations.Demos.dll
+    namespaceName: MoreMountains.NiceVibrations
+    className: WobbleDemoManager
+  - hash:
+      serializedVersion: 2
       Hash: 56171d5f7d69d9b27d6b95b1d3d53aa1
     assemblyName: Obi.dll
     namespaceName: Obi
@@ -360,6 +412,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 4c432d64257651054b1dd3ef11e76655
+    assemblyName: MoreMountains.NiceVibrations.Haptics.dll
+    namespaceName: MoreMountains.NiceVibrations
+    className: MMNVAndroidWaveFormAsset
   - hash:
       serializedVersion: 2
       Hash: 7fffbc8e1713d613b06466bf5197bbb5
@@ -410,10 +468,28 @@ ScriptsOnlyBuild:
     className: JoystickSetterExample
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ColorChangingObject
+  - hash:
+      serializedVersion: 2
+      Hash: 613175f228cb2b05fe46f342b312b0d6
+    assemblyName: MoreMountains.NiceVibrations.Haptics.dll
+    namespaceName: MoreMountains.NiceVibrations
+    className: MMNVRumbleWaveFormAsset
+  - hash:
+      serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AnimationTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 50144b95ce1d4d0ca407b2a0773e8432
+    assemblyName: MoreMountains.NiceVibrations.Demos.dll
+    namespaceName: MoreMountains.NiceVibrations
+    className: MMFPSUnlock
   - hash:
       serializedVersion: 2
       Hash: fd23fa3cd305e0a5f506a9d9d3613cf3
@@ -452,6 +528,12 @@ ScriptsOnlyBuild:
     className: ObiSphericalForceZone
   - hash:
       serializedVersion: 2
+      Hash: f7a04848083d53d1cc7d9a75f1a4478b
+    assemblyName: MoreMountains.NiceVibrations.Demos.dll
+    namespaceName: MoreMountains.NiceVibrations
+    className: WobbleButton
+  - hash:
+      serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -470,7 +552,7 @@ ScriptsOnlyBuild:
     className: Mask
   - hash:
       serializedVersion: 2
-      Hash: 30c90510dabf4e1671fe9a2fef287785
+      Hash: 15209d5d94545977a50132204c32f307
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GrowableObject
@@ -492,6 +574,18 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Shadow
+  - hash:
+      serializedVersion: 2
+      Hash: 2f4ff55096a0d8e697acdee36a50d4f8
+    assemblyName: MoreMountains.NiceVibrations.dll
+    namespaceName: MoreMountains.NiceVibrations
+    className: MMVibrationManagerTester
+  - hash:
+      serializedVersion: 2
+      Hash: ee0e7322234d72d2decc4e8d7cc86534
+    assemblyName: MoreMountains.NiceVibrations.Demos.dll
+    namespaceName: MoreMountains.NiceVibrations
+    className: MMSwitch
   - hash:
       serializedVersion: 2
       Hash: c9ce0a054c8a47e0c140006230f8c7ba
@@ -518,10 +612,22 @@ ScriptsOnlyBuild:
     className: ObjectLimit
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Boxophobic.Utils.Scripts.dll
+    namespaceName: 
+    className: StyledScriptableObject
+  - hash:
+      serializedVersion: 2
       Hash: 94992a14991494a7aa33abd62e2416b8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ObiActorTeleport
+  - hash:
+      serializedVersion: 2
+      Hash: 379f4a764cb25430bccc9cce2eda2d3f
+    assemblyName: MoreMountains.NiceVibrations.Demos.dll
+    namespaceName: MoreMountains.NiceVibrations
+    className: NiceVibrationsDemoManager
   - hash:
       serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
@@ -542,10 +648,22 @@ ScriptsOnlyBuild:
     className: Teleport
   - hash:
       serializedVersion: 2
+      Hash: 8d45f3d2842c46037a92296d0b004f7e
+    assemblyName: MoreMountains.NiceVibrations.Demos.dll
+    namespaceName: MoreMountains.NiceVibrations
+    className: MMFPSCounter
+  - hash:
+      serializedVersion: 2
       Hash: b8a5e8091ab0b8861d2add371082c5e0
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 48a7f0aa1e09fb60df047423c974aa5d
+    assemblyName: Boxophobic.Utils.Scripts.dll
+    namespaceName: Boxophobic.Utils
+    className: SettingsData
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -578,6 +696,12 @@ ScriptsOnlyBuild:
     className: moveQuick
   - hash:
       serializedVersion: 2
+      Hash: d52ef50935acde091817dbf0febd7242
+    assemblyName: MoreMountains.NiceVibrations.Demos.dll
+    namespaceName: MoreMountains.NiceVibrations
+    className: V2DemoManager
+  - hash:
+      serializedVersion: 2
       Hash: 0b00ceba931e15ee0276b5022d393631
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -608,10 +732,34 @@ ScriptsOnlyBuild:
     className: ObiStitcher
   - hash:
       serializedVersion: 2
+      Hash: 629606a35f65d80d81db7785075b4762
+    assemblyName: MoreMountains.NiceVibrations.Demos.dll
+    namespaceName: MoreMountains.NiceVibrations
+    className: SoundSwitch
+  - hash:
+      serializedVersion: 2
+      Hash: b23aa27490d13797fba4e0127c57fbf7
+    assemblyName: MoreMountains.NiceVibrations.Demos.dll
+    namespaceName: MoreMountains.NiceVibrations
+    className: MMUIShaker
+  - hash:
+      serializedVersion: 2
       Hash: ce669872a2be11bc686ea22961d8a3bb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FloatingJoystick
+  - hash:
+      serializedVersion: 2
+      Hash: 2e92a9ce39b0a96736d5c34b4a9676e5
+    assemblyName: MoreMountains.NiceVibrations.Demos.dll
+    namespaceName: MoreMountains.NiceVibrations
+    className: BallPusher
+  - hash:
+      serializedVersion: 2
+      Hash: 64a2c6290be43dffb9b123cd81804930
+    assemblyName: MoreMountains.NiceVibrations.Demos.dll
+    namespaceName: MoreMountains.NiceVibrations
+    className: BallDemoManager
   - hash:
       serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
@@ -650,6 +798,12 @@ ScriptsOnlyBuild:
     className: ObiSoftbodySkinner
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: MoreMountains.NiceVibrations.Demos.dll
+    namespaceName: MoreMountains.NiceVibrations
+    className: MMSignal
+  - hash:
+      serializedVersion: 2
       Hash: 71bbe1ff4a53ab199a68d57f1e9668e6
     assemblyName: Assembly-CSharp.dll
     namespaceName: Kalagaan
@@ -668,6 +822,12 @@ ScriptsOnlyBuild:
     className: VertExmotionTouchDemo
   - hash:
       serializedVersion: 2
+      Hash: 7becdb8e824756f0f183bdaa63217b5a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayGamesManager
+  - hash:
+      serializedVersion: 2
       Hash: 1c420f7131df61f5cf5f670ddb7203c5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -678,6 +838,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Kalagaan
     className: JellyfishSpawn
+  - hash:
+      serializedVersion: 2
+      Hash: f38bf0cc5b080e4c4605a69faf78b535
+    assemblyName: Boxophobic.AtmosphericHeightFog.Runtime.dll
+    namespaceName: AtmosphericHeightFog
+    className: HeightFogOverride
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -750,6 +916,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: 59d586fea9e734e7ab4fc8dcca1b217d
+    assemblyName: MoreMountains.NiceVibrations.Demos.dll
+    namespaceName: MoreMountains.NiceVibrations
+    className: MMKnob
   - hash:
       serializedVersion: 2
       Hash: feb9a5a121d15fa3654d4e50a5233045
@@ -842,6 +1014,12 @@ ScriptsOnlyBuild:
     className: ObiParticlePicker
   - hash:
       serializedVersion: 2
+      Hash: 68720e82621f002dff4245f4bc9ca34d
+    assemblyName: MoreMountains.NiceVibrations.Demos.dll
+    namespaceName: MoreMountains.NiceVibrations
+    className: TransientHapticsDemoManager
+  - hash:
+      serializedVersion: 2
       Hash: 308b779c69093f9f076a98bd021286d8
     assemblyName: Assembly-CSharp.dll
     namespaceName: Kalagaan
@@ -858,6 +1036,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: UltimateCameraController.Cameras.Controllers
     className: CameraController
+  - hash:
+      serializedVersion: 2
+      Hash: 17ff0ae7c295eb24f411329dc69ff12d
+    assemblyName: MoreMountains.NiceVibrations.Demos.dll
+    namespaceName: MoreMountains.NiceVibrations
+    className: PresetDemoManager
+  - hash:
+      serializedVersion: 2
+      Hash: 8c344ed62ab00d2c9a135cba903727fb
+    assemblyName: Boxophobic.AtmosphericHeightFog.Runtime.dll
+    namespaceName: AtmosphericHeightFog
+    className: HeightFogPerObject
   - hash:
       serializedVersion: 2
       Hash: d1672a60e856bcddabeec80d87b3e16e
@@ -884,6 +1074,18 @@ ScriptsOnlyBuild:
     className: SignalReceiver
   - hash:
       serializedVersion: 2
+      Hash: b348605f8e5d840856cb3a28d017409d
+    assemblyName: Boxophobic.AtmosphericHeightFog.Runtime.dll
+    namespaceName: AtmosphericHeightFog
+    className: HeightFogGlobal
+  - hash:
+      serializedVersion: 2
+      Hash: bee13f8592d9b041491c09d14d2a4202
+    assemblyName: MoreMountains.NiceVibrations.Demos.dll
+    namespaceName: MoreMountains.NiceVibrations
+    className: DemoManager
+  - hash:
+      serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -900,6 +1102,12 @@ ScriptsOnlyBuild:
     assemblyName: Obi.dll
     namespaceName: Obi
     className: ObiInstancedParticleRenderer
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: GooglePlayGames.OurUtils
+    className: NearbyHelperObject
   - hash:
       serializedVersion: 2
       Hash: e1300922cc039f41ab46a47f4cb05898
@@ -962,10 +1170,34 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: 7402d019c7a290800429488e53087c57
+      Hash: bcfbcab1c0031fdb1fe7e42ec0fbc286
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Points
+  - hash:
+      serializedVersion: 2
+      Hash: 3f65e49f51e069cc2ab51e374c5757bd
+    assemblyName: MoreMountains.NiceVibrations.Demos.dll
+    namespaceName: MoreMountains.NiceVibrations
+    className: PowerBarElement
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: MoreMountains.NiceVibrations.Demos.dll
+    namespaceName: MoreMountains.NiceVibrations
+    className: BallDemoWall
+  - hash:
+      serializedVersion: 2
+      Hash: 2afc487f389667b13afc145482febfb3
+    assemblyName: MoreMountains.NiceVibrations.Demos.dll
+    namespaceName: MoreMountains.NiceVibrations
+    className: HapticCurve
+  - hash:
+      serializedVersion: 2
+      Hash: 927080e56c51e9e97a1d741574d8c374
+    assemblyName: MoreMountains.NiceVibrations.Demos.dll
+    namespaceName: MoreMountains.NiceVibrations
+    className: MMProgressBar
   - hash:
       serializedVersion: 2
       Hash: 2c43b9ce69fb3af451e569f72ccc4c58
@@ -978,6 +1210,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Kalagaan
     className: VertExmotionShare
+  - hash:
+      serializedVersion: 2
+      Hash: ab39682cc284aa1c151bead38ea11135
+    assemblyName: MoreMountains.NiceVibrations.Demos.dll
+    namespaceName: MoreMountains.NiceVibrations
+    className: RegularPresetsDemoManager
   - hash:
       serializedVersion: 2
       Hash: ffc8b678455ea6425253dfec33d72e8a
@@ -1028,6 +1266,12 @@ ScriptsOnlyBuild:
     className: AudioTrack
   - hash:
       serializedVersion: 2
+      Hash: 68acc1aaba161e994f054a225990779b
+    assemblyName: MoreMountains.NiceVibrations.Demos.dll
+    namespaceName: MoreMountains.NiceVibrations
+    className: BallTouchZone
+  - hash:
+      serializedVersion: 2
       Hash: d4777fd2ce44d1e2e83e35f2ab3c7e15
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1056,6 +1300,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MSCameraController
+  - hash:
+      serializedVersion: 2
+      Hash: d39e72ddd05501c3b6019f0a9ed8d7c7
+    assemblyName: MoreMountains.NiceVibrations.Demos.dll
+    namespaceName: MoreMountains.NiceVibrations
+    className: Pagination
   - hash:
       serializedVersion: 2
       Hash: 2fe11a5ed6e59ca3e9402aca31a5624d
@@ -1124,6 +1374,12 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
+      Hash: b428f7c75340cbc1ccd3f8dc35969635
+    assemblyName: MoreMountains.NiceVibrations.Demos.dll
+    namespaceName: MoreMountains.NiceVibrations
+    className: BallDemoBall
+  - hash:
+      serializedVersion: 2
       Hash: 5f5a72f938c631ecd1a3f37b3b85bd84
     assemblyName: Obi.dll
     namespaceName: Obi
@@ -1142,6 +1398,12 @@ ScriptsOnlyBuild:
     className: TireDeformation
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: GooglePlayGames.OurUtils
+    className: PlayGamesHelperObject
+  - hash:
+      serializedVersion: 2
       Hash: 77a4e79347d91262c49e202be934847b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1152,6 +1414,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextMeshPro
+  - hash:
+      serializedVersion: 2
+      Hash: 166e3f680ecf9df8a1665afb8a1ebcc8
+    assemblyName: MoreMountains.NiceVibrations.Demos.dll
+    namespaceName: MoreMountains.NiceVibrations
+    className: CarDemoManager
   - hash:
       serializedVersion: 2
       Hash: 3165968ba45c74472d279ba04455fccb
@@ -1182,6 +1450,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: BaseInput
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Boxophobic.Utils.Scripts.dll
+    namespaceName: 
+    className: StyledMonoBehaviour
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
@@ -1220,7 +1494,7 @@ ScriptsOnlyBuild:
     className: PlaymodeTestsController
   - hash:
       serializedVersion: 2
-      Hash: 40290f207c867dee793e7dbc8be77794
+      Hash: dde47035d4a61baae695f13b5a71e4b5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PointManager
@@ -1304,11 +1578,17 @@ ScriptsOnlyBuild:
     className: SimpleMeshDemo
   - hash:
       serializedVersion: 2
-      Hash: a4928063ccd8106c6155fe8d7545fc88
+      Hash: 095c2ebaacd3fd0538ebe10af3233024
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: ObstaclePart
+    className: ObstacleCleaner
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Ground
   platform: 13
   scenePathNames:
   - Assets/rofloproj/scene1.unity
-  playerPath: D:/Unity/Reborn v.0.2/CubeDafaq 0.1.11.apk
+  playerPath: D:/Unity/1111.apk

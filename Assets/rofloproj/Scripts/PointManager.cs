@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using MoreMountains.NiceVibrations;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -33,6 +34,7 @@ public class PointManager : MonoBehaviour
     public void Awake()
     {
         Instance = this;
+        GrowableObject.Instance.CurrentColor = LevelColors[Random.Range(0, LevelColors.Length)];
     }
     void Start()
     {
@@ -59,6 +61,7 @@ public class PointManager : MonoBehaviour
     }
     public void AddScore()
     {
+        MMVibrationManager.Haptic(HapticTypes.Success);
         if (scoreMultiplier == false)
         {
             CollectedPoints++;

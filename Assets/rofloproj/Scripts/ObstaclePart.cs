@@ -5,6 +5,12 @@ using UnityEngine;
 public class ObstaclePart : MonoBehaviour
 {
     public GameObject Particles;
+    public void DestroyOnGrow()
+    {
+        Particles.SetActive(true);
+        Particles.transform.parent = null;
+        transform.root.gameObject.SetActive(false);
+    }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.GetComponent<PlayerMovement>())
