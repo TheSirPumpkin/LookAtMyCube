@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/rofloproj/scene1.unity
+- path: Assets/rofloproj/ui_canvas.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
